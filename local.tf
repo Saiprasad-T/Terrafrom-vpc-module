@@ -18,4 +18,6 @@ locals {
          },
         var.igw_tags
     )
+    #from the o/p data, under names we have availability zones, so use .names
+    az_names = slice(data.aws_availability_zones.available.names,0,2) 
 }
