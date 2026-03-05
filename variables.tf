@@ -76,3 +76,8 @@ variable "nat_gtw_tags" {
   default     = { }
 }
 
+variable "is_peering_requried" {
+    type = bool
+    default = false
+}
+
